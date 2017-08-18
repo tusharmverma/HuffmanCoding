@@ -92,3 +92,13 @@ public:
     }
     
 };
+
+int main()
+{
+    HuffmanCodes set1;
+    std::vector<char> data({'d', 'e', 'b', 'c', 'a', 'f'});
+    std::vector<size_t> freq({16, 9, 13, 12, 45, 5});
+    size_t size = data.size();
+    set1.GenerateCode(data, freq, size);
+    return 0;
+}
